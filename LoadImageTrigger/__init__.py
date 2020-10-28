@@ -34,7 +34,7 @@ def getImageTags(image_uri):
     body = json.dumps({"url": image_uri})
 
     response = requests.post(f"https://aiengcomputervision.cognitiveservices.azure.com/vision/v3.1/analyze?visualFeatures=Tags",
-                headers={"Content-Type": "application/json", "Ocp-Apim-Subscription-Key": "8abca16e146b44e4aa8d163f961d9f2e"},
+                headers={"Content-Type": "application/json", "Ocp-Apim-Subscription-Key": os.environ['cognitiveservicevisionkey']},
                 data = body
                 )
 
