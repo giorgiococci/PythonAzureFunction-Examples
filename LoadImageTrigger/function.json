@@ -6,14 +6,14 @@
       "type": "blobTrigger",
       "direction": "in",
       "path": "image-function/input-images/{blobname}.{blobextension}",
-      "connection": "aiengstorageaccntcode_STORAGE"
+      "connection": "storageaccntconnectionstring"
     },
     {
       "name": "blobout",
       "type": "blob",
       "direction": "out",
       "path": "image-function/output-tags/{blobname}.json",
-      "connection": "aiengstorageaccntcode_STORAGE"
+      "connection": "storageaccntconnectionstring"
     }
   ]
 }
