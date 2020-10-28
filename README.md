@@ -6,4 +6,4 @@ In this repository I wrote some Azure Function using the Python language that ca
 
 # Azure Functions
 ## Cognitive Services
-[LoadImageTrigger](/LoadImageTrigger/README.md)
+[LoadImageTrigger](https://github.com/giorgiococci/PythonAzureFunction-Examples/tree/master/LoadImageTrigger)
