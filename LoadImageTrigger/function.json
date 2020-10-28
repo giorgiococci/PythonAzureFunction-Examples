@@ -1,0 +1,19 @@
+{
+  "scriptFile": "__init__.py",
+  "bindings": [
+    {
+      "name": "myblob",
+      "type": "blobTrigger",
+      "direction": "in",
+      "path": "image-function/input-images/{blobname}.{blobextension}",
+      "connection": "aiengstorageaccntcode_STORAGE"
+    },
+    {
+      "name": "blobout",
+      "type": "blob",
+      "direction": "out",
+      "path": "image-function/output-tags/{blobname}.json",
+      "connection": "aiengstorageaccntcode_STORAGE"
+    }
+  ]
+}
