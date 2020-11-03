@@ -1,10 +1,8 @@
-# BlobTrigger - Python
+# Overview
 
-The `BlobTrigger` makes it incredibly easy to react to new Blobs inside of Azure Blob Storage. This sample demonstrates a simple use case of processing data from a given Blob using Python.
+This function is triggered by the insert of an image into an Azure Blob Storage.  
 
-## How it works
-
-For a `BlobTrigger` to work, you provide a path which dictates where the blobs are located inside your container, and can also help restrict the types of blobs you wish to return. For instance, you can set the path to `samples/{name}.png` to restrict the trigger to only the samples path and only blobs with ".png" at the end of their name.
+When triggered, the function calls the Azure Cognitive Service Computer Vision passing the url of the uploaded image. This API return the tags information about the passed image and save the JSON result into another folder of the Azure Blob Storage.  
 
 ## Requirements
 1. Have an azure storage account
